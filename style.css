@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;600&display=swap');
+h2{
+    text-align: center;
+}
+*{
+    font-family: 'Source Code Pro', monospace;
+}
+.soon{
+    text-align: center;
+}
+.title{
+    text-align: center;
+}
+
+.roadmap{
+    display: flex;
+    justify-content: center;
+}
+
+.roadmap img{
+    width: 70%;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    position: relative;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+   
+   
+   
+    border: 1px solid black; /* Remove borders */
+    background-color: white; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 300px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+      color: white;
+    background-color: black; /* Add a dark-grey background on hover */
+  }
+.home-button{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin-bottom: 300px;
+    margin: 10px;
+    background-color: white;
+    transition: .4s;
+}
+.home-button:hover{
+    cursor: pointer;
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
+}
+.landing-home-button{
+    font-size: 22px;
+    border: 3px double #000000;
+}
+a:visited { 
+    text-decoration: none; 
+    color: black; 
+   }
+@media only screen and (min-width: 1000px) {
+    .logo img{
+        width: 40%;
+    }
+}
+
+  
+  .home-div{
+      text-align: center;
+  }

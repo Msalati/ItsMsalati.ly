@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoadMap | ItsMsalati</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">
+        
+    <h1>Road Maps</h1>
+    </div>
+    <div class="home-div">
+        <button onclick="window.location.href = '/';"class="home-button">Go Home</button>
+    </div>
+
+    <hr>
+    <div class="roadmap">
+        <img src="assets/frontend.png" alt="">
+
+    </div>
+    <div class="roadmap">
+        <img src="assets/backend.png" alt="">
+
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            currentYOffset = self.pageYOffset;
+            initYOffset = currentYOffset;
+
+            var intervalId = setInterval(function () {
+                currentYOffset -= initYOffset * 0.05;
+                document.body.scrollTop = currentYOffset;
+                document.documentElement.scrollTop = currentYOffset;
+
+                if (self.pageYOffset == 0) {
+                    clearInterval(intervalId);
+                }
+            }, 20);
+        } 
+    </script>
+</body>
+
+</html>
