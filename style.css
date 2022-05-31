@@ -11,7 +11,10 @@ h2{
 .title{
     text-align: center;
 }
-
+.nav-head{
+    display: flex;
+    justify-content: left;
+}
 .roadmap{
     display: flex;
     justify-content: center;
@@ -83,7 +86,23 @@ a:visited {
     }
 }
 
-  
+ .msalati{
+     
+	animation: float 4s ease-in-out infinite;
+ } 
   .home-div{
       text-align: center;
   }
+
+
+  @keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-8px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
