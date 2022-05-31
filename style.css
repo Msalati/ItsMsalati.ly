@@ -116,7 +116,16 @@ a:visited {
       padding-top: 20px;
       text-align: center;
   }
-
+.socials img{
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+}
+.socials{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
 
   @keyframes float {
 	0% {
