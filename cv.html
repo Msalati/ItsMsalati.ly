@@ -1,25 +1,85 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | ItsMsalati</title>
+    <title>??? | ItsMsalati</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body-cv">
-    <div class="nav-head nav-head-cv">
-        <div class="msalat-svg msalati">
-            <a href="/"><img src="assets/ItsMsalati-updated.svg" alt=""></a>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/"><img height="43px" width="60px" src="assets/ItsMsalati-Blue-app-icon.svg" alt="" /></a>
+            </div>
+            <div class="page-title">Resu-who?</div>
+
+            <div class="hamburger" onclick="toggleNavLinks()"><svg width="31" height="22" viewBox="0 0 31 22"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.0317383 11.3612C1.2395 10.893 2.44726 10.5289 3.65502 10.2032C4.86278 10.2258 6.07054 10.21 7.2783 10.2145L14.5271 10.2145L29.0248 10.2145C29.6581 10.2145 30.1715 10.7279 30.1715 11.3612C30.1715 11.9945 29.6581 12.5079 29.0248 12.5079L14.5271 12.5079L7.28056 12.5079C6.0728 12.5124 4.86504 12.4966 3.65728 12.5192C2.44726 12.1935 1.2395 11.8294 0.0317383 11.3612Z"
+                        fill="#3DF2F2" />
+                    <path
+                        d="M8.36602 19.646C9.15536 19.6686 9.94697 19.6551 10.7363 19.6596L24.9739 19.6596C25.442 19.6596 25.8401 19.94 26.0188 20.3381L25.2679 21.91L25.2679 21.9145C25.1752 21.9371 25.0756 21.9507 24.9739 21.9507L10.7363 21.9507C9.94697 21.9552 9.15536 21.9371 8.36602 21.9598C7.57216 21.6341 6.78508 21.2722 5.99121 20.804C6.78508 20.3336 7.57442 19.9717 8.36602 19.646Z"
+                        fill="#3DF2F2" />
+                    <path
+                        d="M10.7388 0.771902L24.9763 0.771902C25.0781 0.771902 25.1776 0.78548 25.2703 0.808098C25.5169 1.33508 25.7702 1.86206 26.0212 2.38904C25.8425 2.78258 25.44 3.06303 24.9763 3.06303L10.7388 3.06303C9.94941 3.06755 9.1578 3.05398 8.36846 3.0766C7.5746 2.74639 6.78752 2.38451 5.99365 1.91633C6.78752 1.44816 7.5746 1.08628 8.36846 0.760596C9.15554 0.785475 9.94941 0.767379 10.7388 0.771902Z"
+                        fill="#3DF2F2" />
+                </svg>
+            </div>
+            
+            <div class="side-menu" id="menu">
+                <div class="side-menu-title">M e n u</div>
+                <div class="close-menu" onclick="closeNavLinks()">X</div>
+                <ul>
+                    <a href="/" class="link">
+                        <li>Home</li>
+                    </a>
+                    <a href="/web-gate.html" class="link">
+                        <li>Web Gate </li>
+                    </a>
+                    <a href="cv.html" class="link">
+                        <li>Resume???</li>
+                    </a>
+                </ul>
+            </div>
+
         </div>
-        
-        <div class="home-div">
-            <a class="home-button" href="assets/cv/Mohammed-Yousef.png" download>
-                Download Resume
-              </a>
-        </div>
-    </div>
-    <div class="cv-container">
-        <img  class="cv" src="assets/cv/Mohammed-Yousef.png" alt="cv">
-    </div>
+    </nav>
+   <h1 class="resume-page"> Not looking for a job right now.</h1>
+
+    <div class="star-container"></div>
+
+    <script>
+        function createStars() {
+            const container = document.querySelector('.star-container');
+            const numStars = 70;
+
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.position = 'absolute';
+                star.style.left = Math.random() * 100 + 'vw';
+                star.style.top = Math.random() * 100 + 'vh';
+                container.appendChild(star);
+            }
+        }
+
+        createStars();
+
+
+        function toggleNavLinks() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('open');
+        } function closeNavLinks() {
+            const menu = document.getElementById('menu');
+            menu.classList.remove('open');
+        }
+    </script>
+
 </body>
+
 </html>
