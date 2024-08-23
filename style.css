@@ -532,6 +532,15 @@ nav {
   background-color: transparent;
   overflow: hidden;
 }
+.m-announcment{
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.044);
+  margin-top: 10px;
+  font-weight: 100;
+  margin: 0 100px;
+  text-align: center;
+  /* written in August 23rd 2024 */
+}
 
 .line::before {
   content: '';
